@@ -1,0 +1,35 @@
+
+        form{
+            border: 1px solid darkcyan;
+            width: 300px;
+            margin: 0px auto;
+            text-align: center;
+            
+            background: rgba(255,255,255,5);
+            border-radius: 6px;
+            
+        }
+        input{
+            display: block;
+            width: 100%;
+            padding: 0 16px;
+            height: 44px;
+            text-align: center;
+            box-sizing: border-box;
+            outline: none;
+            
+            font-family: "montserrat",sans-serif;
+
+        }
+        image{
+            margin: 30px;
+            cursor: pointer;
+        }
+        p{
+            text-align: center;
+        }     
+        .color {
+           background-color: #45a049;
+   
+        }
+       

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/login.css" rel="stylesheet">
+<script src="js/login.js"></script>
+<title>Document</title>
+
+</head>
+<body onload="myfunction()">
+	<script>	  	 
+	      //console.log(getCookie("userName") && getCookie("password"));
+		if (getCookie("userName") && getCookie("password")) {//如果为true
+			//需要创建一个user
+			//直接调用cookielogin
+			 var a=document.getElementById("form1").action;
+              a="cookielogin";
+              
+               //然后直接调用点击登录
+			
+	      }// 判断多选框是否选中
+	</script>
+	<div class="color">
+		<form id="form1" action="LoginController.do" method="post">
+			<p>
+				<label for="userName">用户名</label> <input class="sign-text"
+					type="text" name="userName" />
+			</p>
+			<p>
+				<label for="password">密码</label> <input type="password"
+					name="password" />
+			</p>
+			<h3>验证码</h3>
+			<img src="CreateVcodeImageController.do" id="verifyCode"
+				title="看不清楚换一张" onclick="changeCode()" style="cursor: pointer"></br>
+			<input type="text" name="vcode" id="vcode" placeholder="验证码" /></br>
+			<p>
+				<input id="tj" type="submit" value="开始登录" />
+			</p>
+			<p>
+				<input type="checkbox" name="tjlogin" id="tjlogin" />一周内免登录<br>
+			</p>
+
+		</form>
+
+	</div>
+</body>
+</html>
